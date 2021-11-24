@@ -1,0 +1,19 @@
+<div class="container pagination">
+    <button
+      class='btn'
+      [disabled]="pagination.page == 1"
+      (click)="previousPage(pagination.page - 1)"
+    >
+      Previous
+    </button>
+
+    <p class="pagination_page">{{pagination.page}}</p>
+
+    <button
+      class='btn'
+      [disabled]="pagination.page == this.pagination.total_pages"
+      (click)="nextPage(pagination.page + 1)"
+    >
+      Next
+    </button>
+</div>

@@ -1,0 +1,116 @@
+/*     Variables     */
+:root {
+  --mainColor: #4749c0;
+  --secondaryColor: #d1d2f5;
+  --darkColor: #313272;
+  --backgroundColor: #f8f6fd;
+  --white: #ffffff;
+  --gray: #cccccc;
+  --shadow: #808080;
+  --error: #ff0000;
+
+  --hoverBtnColored: #5553ce;
+  --shadowBtn: #232341;
+}
+
+/*     Main     */
+html {
+  height: 100vh;
+  background-color: var(--backgroundColor);
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*     Container     */
+
+.container {
+  display: flex;
+  flex-flow: row;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.container-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.container-column {
+  flex-flow: column;
+}
+
+/*     Buttons     */
+
+.btn {
+  height: 3em;
+  min-width: 6em;
+  font-weight: bold;
+  border: 0px solid;
+  border-radius: 3px;
+  color: var(--mainColor);
+  background-color: var(--white);
+  cursor: pointer;
+  box-shadow: 1px 2px 2px var(--shadowBtn);
+}
+
+.btn:hover {
+  color: var(--darkColor);
+  background-color: var(--secondaryColor);
+}
+
+.btn:active {
+  color: var(--white);
+  background-color: var(--darkColor);
+}
+
+.btn:disabled {
+  color: var(--white);
+  background-color: var(--gray);
+  cursor: default;
+}
+
+.btn-colored {
+  color: var(--white);
+  background-color: var(--mainColor);
+}
+
+.btn-colored:hover {
+  color: var(--white);
+  background-color: var(--hoverBtnColored);
+}
+
+.btn-colored:active {
+  color: var(--white);
+  background-color: var(--darkColor);
+}
+
+.btn-colored:disabled {
+  color: var(--white);
+  background-color: var(--gray);
+  cursor: default;
+}
+
+/*     Inputs     */
+
+.input {
+  margin-bottom: 1em;
+  height: 2em;
+  min-width: 15em;
+  width: 100%;
+  border: 0px;
+  border-bottom: 1px solid;
+  border-color: var(--mainColor);
+  background-color: var(--backgroundColor);
+}
+
+input:focus {
+  outline: none;
+}

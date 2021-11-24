@@ -1,0 +1,12 @@
+.pagination {
+ justify-content: center;
+ align-content: center;
+ margin-top: 2%;
+}
+
+.pagination_page {
+  display: flex;
+  flex-flow: row;
+  margin-left: 20%;
+  margin-right: 20%;
+}

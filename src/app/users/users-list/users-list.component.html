@@ -1,0 +1,11 @@
+<div class="container container-column">
+  <h2 class="title"> Users </h2>
+  <div class=" users">
+    <app-users-list-item *ngFor="let user of users" [user]='user'></app-users-list-item>
+    <app-pagination
+      [pagination]="pages"
+      (previousPageEvent)="getUsers($event)"
+      (nextPageEvent)="getUsers($event)"
+    ></app-pagination>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="container container-center container-column form">
+  <h1 class="title">Log In</h1>
+  <form class="form_container" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <input class="input" placeholder="Email" type="email" formControlName="email">
+      <input class="input" placeholder="Password" type="password" formControlName="password">
+
+      <button class="btn btn-colored btn-login" [disabled]="loginForm.invalid">Log In</button>
+  </form>
+  <h4 class="error" *ngIf="errorMsg != ''">{{errorMsg}}</h4>
+</div>

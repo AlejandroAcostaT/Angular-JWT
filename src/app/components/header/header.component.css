@@ -1,0 +1,13 @@
+.header {
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--mainColor);
+  box-shadow: 0px 1px 2px var(--shadow);
+  align-items: center;
+}
+
+.title {
+  color: var(--white);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
