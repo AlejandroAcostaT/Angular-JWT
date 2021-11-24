@@ -8,11 +8,11 @@ Run `npm install` to install all components to run the project.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` or `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` or `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Project
 
@@ -22,7 +22,7 @@ The token is saved in the Local Storage and is sent by an interceptor service th
 
 ## Login
 
-email: eve.holt@reqres.in
+email: eve.holt@reqres.in   
 password: cityslicka   
 
 Any other user gives an error
